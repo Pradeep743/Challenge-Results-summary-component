@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'HankenGrotesk-Medium';
-    src: url('./fonts/HankenGrotesk-Medium.ttf') format('truetype');
+    src: url('./assets/fonts/HankenGrotesk-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'HankenGrotesk-Bold';
-    src: url('./fonts/HankenGrotesk-Bold.ttf') format('truetype');
+    src: url('./assets/fonts/HankenGrotesk-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'HankenGrotesk-ExtraBold';
-    src: url('./fonts/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    src: url('./assets/fonts/HankenGrotesk-ExtraBold.ttf') format('truetype');
 }
 
 * {
@@ -30,6 +30,7 @@ p {
     align-items: center;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .result {
@@ -64,11 +65,13 @@ p {
 .circle .large {
     font-family: 'HankenGrotesk-ExtraBold';
     font-size: 4rem;
+    color: hsl(0, 0%, 100%);
 }
 
 .result-status {
     font-family: 'HankenGrotesk-Bold';
     font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
 }
 
 .summary {
@@ -89,11 +92,37 @@ p {
     background-color: #fff6f5;
 }
 
+.tab p {
+    display: flex;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.tab .reaction {
+    color: hsl(0, 100%, 67%);
+}
+
+.tab .memory {
+    color: hsl(39, 100%, 56%);
+}
+
+.tab .verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+.tab .visual {
+    color: hsl(234, 85%, 45%);
+}
+
+
 button {
     border-radius: 20px;
     padding: 0.8em;
     border: none;
     cursor: pointer;
+    color: #f7ffff;
+    font-size: 1rem;
+    background-color: hsl(224, 30%, 27%);
 }
 
 @media (min-width: 450px) {
