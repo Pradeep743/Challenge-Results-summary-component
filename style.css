@@ -22,15 +22,16 @@
 
 p {
     font-size: 18px;
+    color: hsl(241, 100%, 89%);
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: hsl(0, 0%, 100%);
+    box-shadow: 10px 19px 40px hsl(221, 100%, 96%);
 }
 
 .result {
@@ -38,22 +39,27 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid black;
-    border-radius: 20px;
+    gap: 1rem;
+    border-radius: 30px;
+    border: none;
     padding: 1.5rem;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result h3 {
+    color: hsl(241, 100%, 89%);
+    letter-spacing: 1.4px;
 }
 
 .circle {
-    width: 60%;
+    width: 70%;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     text-align: center;
     margin: 0 auto;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
 .circle::after {
@@ -78,24 +84,40 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
     border-radius: 10px;
     color: black;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.summary .score {
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .tab {
     margin: 0.8rem 0;
-    padding: 0.5rem 0.4rem;
+    padding: 1rem 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff6f5;
+    transition: box-shadow .3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tab:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .tab p {
     display: flex;
     text-align: center;
-    gap: 0.8rem;
+    gap: 0.5rem;
+}
+
+.tab p:last-child {
+    color: gray;
 }
 
 .tab .reaction {
@@ -114,16 +136,36 @@ p {
     color: hsl(234, 85%, 45%);
 }
 
+.tab:nth-child(1) {
+    background-color: hsl(6, 100%, 98%);
+}
+
+.tab:nth-child(2) {
+    background-color: hsl(42, 100%, 97%);
+}
+
+.tab:nth-child(3) {
+    background-color: hsl(180, 44%, 96%);
+}
+
+.tab:nth-child(4) {
+    background-color: hsl(240, 71%, 97%);
+}
 
 button {
-    border-radius: 20px;
-    padding: 0.8em;
+    border-radius: 30px;
+    padding: 1em;
     border: none;
     cursor: pointer;
     color: #f7ffff;
     font-size: 1rem;
     background-color: hsl(224, 30%, 27%);
 }
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
 
 @media (min-width: 450px) {
 
@@ -142,8 +184,7 @@ button {
 
     .result {
         width: 50%;
-        border-right: 1px solid black;
-        border-bottom: 0;
+        gap: 1.5rem;
     }
 
     .summary {
