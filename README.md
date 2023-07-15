@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/Pradeep743/Results-summary-component-Challenge)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Visit site](https://pradeep743.github.io/Results-summary-component-Challenge/)
 
 ## My process
 
@@ -49,7 +49,7 @@ I learnt about linear gradients, variable fonts, responsive layouts, flexbox and
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- LinkedIn - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Pradeep743](https://www.frontendmentor.io/profile/Pradeep743)
+- LinkedIn - [@pradeepsahu074](https://www.linkedin.com/in/pradeepsahu074/)
 
 
