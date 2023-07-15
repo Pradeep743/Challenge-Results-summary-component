@@ -20,6 +20,11 @@
     font-family: 'HankenGrotesk-Medium';
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 p {
     font-size: 18px;
     color: hsl(241, 100%, 89%);
@@ -46,9 +51,10 @@ p {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-.result h3 {
+.result h1 {
     color: hsl(241, 100%, 89%);
     letter-spacing: 1.4px;
+    font-size: 1.4rem;
 }
 
 .circle {
@@ -166,6 +172,11 @@ button:hover {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 
 @media (min-width: 450px) {
 
@@ -176,7 +187,7 @@ button:hover {
     }
 
     .container {
-        margin: 3rem auto;
+        margin: 4rem auto;
         max-width: 600px;
         flex-direction: row;
         align-items: flex-start;
